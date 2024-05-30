@@ -8,8 +8,8 @@ export const ToDoForm = ({ addTodo }) => {
         e.preventDefault();
 
         addTodo({
-            name: name,
-            task: value
+            name: name || "Заметка",
+            task: value || "Значение по умолчанию",
         });
 
 		setValue("")
